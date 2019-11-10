@@ -3,8 +3,19 @@ package com.example.java_lib;
 public class Test01 {
 
     public static void main(String[] args){
-        method03();
+        method04();
+
     }
+
+    public static void method04(){
+        System.out.println(getStu().hashCode());
+        System.out.println(getStu().hashCode());
+    }
+
+    public static Student getStu(){
+        return new Student();
+    }
+
     public static void method03(){
         FinalTest finalTest = new FinalTest();
         System.out.println("p="+finalTest.p);
